@@ -1,14 +1,16 @@
 import MenuButton from './MenuButton'
 
 const Menu = ({ categories, filterMenuItems }) => {
-  //console.log(menuItems)
-  //const { categories } = props
   return (
     <>
       <div className="btn-container">
-        {categories.map((category) => {
+        {categories.map((category, index) => {
           return (
-            <MenuButton category={category} filterMenuItems={filterMenuItems} />
+            <MenuButton
+              category={category}
+              filterMenuItems={filterMenuItems}
+              key={index}
+            />
           )
         })}
       </div>

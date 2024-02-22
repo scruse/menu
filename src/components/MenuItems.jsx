@@ -1,7 +1,5 @@
 import MenuItem from './MenuItem'
-const MenuItems = (props) => {
-  console.log(props)
-  const { menuItems } = props
+const MenuItems = ({ menuItems }) => {
   return (
     <div className="section-center">
       {menuItems.map((item) => {
